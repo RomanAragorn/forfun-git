@@ -29,7 +29,7 @@ function generateCharacter() {
   let characterPath; 
   let characterElement;
 
-  const path = Math.ceil(Math.random() * 7);
+  const path = Math.ceil(Math.random() * 8);
 
   if (path === 1) {
     characterPath = 'destruction';
@@ -45,7 +45,9 @@ function generateCharacter() {
     characterPath = 'preservation';
   } else if (path === 7) {
     characterPath = 'abundance';
-  } 
+  } else if (path === 8) {
+    characterPath = 'remembrance';
+  }
   
   charPath = characterPath;
 
